@@ -39,7 +39,7 @@ python split_val.py
 
 # Train
 
-Download the video encoder weights for ViCLIP from https://drive.google.com/file/d/1umwgDanL70qsFbrUCkqjLOpLwJ9mlWsN/view?usp=sharing and place them in the ./model/ directory.
+Download the video encoder weights for ViCLIP from https://drive.google.com/file/d/1l_OmswuXY5pHB8YL039ty1ms-E0J-Wbm/view?usp=sharing and place them in the ./model/ directory.
 
 ```bash
 python train.py
