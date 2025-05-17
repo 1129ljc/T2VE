@@ -75,6 +75,7 @@ def train():
                 loss = loss_fn(predict.squeeze(1), label_torch)
                 iter_loss = loss.cpu().float()
                 val_loss = val_loss + iter_loss
+                predict = torch.sigmoid(predict)
                 predict = predict.cpu().detach().numpy().astype('float').flatten()
                 label = label.cpu().detach().numpy().astype('int').flatten()
                 predict = predict >= 0.5

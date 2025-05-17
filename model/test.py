@@ -32,6 +32,7 @@ def test():
         for idx, (frames, label) in enumerate(test_loader):
             frames_torch, label_torch = frames.float().to(device), label.float().to(device)
             predict = model(frames_torch)
+            predict = torch.sigmoid(predict)
             predict = predict.cpu().detach().numpy().astype('float').flatten()
             predict = predict >= 0.5
             label = label.cpu().detach().numpy().astype('float').flatten()
