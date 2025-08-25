@@ -1,6 +1,6 @@
 # Paper
 
-This is the official code of paper 'Text-Vision Embedding for Generalized AI-Generated Video Detection'.
+This is the official code of paper 'Text-Vision Embedding for Generalized AI-Generated Video Detection'. The paper has been accepted by PRCV2025.
 
 # Abstract
 
